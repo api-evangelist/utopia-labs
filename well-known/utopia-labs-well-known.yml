@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of utopialabs.com (site offline post-acquisition)
+host: https://utopialabs.com
+note: >-
+  utopialabs.com resolves (Framer-hosted DNS) but the root page and all probed
+  well-known paths return 404. Coinbase acquired Utopia Labs Corp. on
+  2024-11-13 and the product site has been taken down. The docs, api, and app
+  subdomains no longer resolve in DNS.
+documents:
+- path: /
+  status: 404
+- path: /.well-known/security.txt
+  status: 404
+- path: /llms.txt
+  status: 404
+hosts_probed:
+- host: utopialabs.com
+  status: 404
+- host: www.utopialabs.com
+  status: 404
+- host: docs.utopialabs.com
+  status: no-dns
+- host: api.utopialabs.com
+  status: no-dns
+- host: app.utopialabs.com
+  status: no-dns

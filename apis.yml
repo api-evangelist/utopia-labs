@@ -1,8 +1,25 @@
 aid: utopia-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/utopia-labs.png
 name: Utopia Labs
-description: 'Utopia Labs is a company surfaced as a portfolio company of paradigm and added to the API
-  Evangelist network as a stub for enrichment. Sector: crypto-fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Utopia Labs was a stablecoin payments and finance-operations platform for
+  crypto-native teams and DAOs, covering payments, payroll, invoicing, and
+  approval workflows, backed by Paradigm. Coinbase acquired Utopia Labs Corp.
+  on November 13, 2024, and the team joined Base to build onchain payments
+  into Coinbase Wallet. The company no longer operates independently and
+  publishes no public API surface — utopialabs.com returns 404 and its former
+  docs, api, and app subdomains no longer resolve.
 url: https://raw.githubusercontent.com/api-evangelist/utopia-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,20 @@ x-backed-by:
 - paradigm
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: coinbase
+x-acquired-date: '2024-11-13'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto Fintech
+- Stablecoins
+- Payments
+- DAO
+- Payroll
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/utopia-labs-domain-security.yml
+- type: WellKnown
+  url: well-known/utopia-labs-well-known.yml
+- type: LLMsTxt
+  url: llms/utopia-labs-llms.txt
 - type: Website
   url: https://utopialabs.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
