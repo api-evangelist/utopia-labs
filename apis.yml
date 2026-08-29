@@ -32,6 +32,9 @@ description: >-
   publishes no public API surface — utopialabs.com returns 404 and its former
   docs, api, and app subdomains no longer resolve.
 url: https://raw.githubusercontent.com/api-evangelist/utopia-labs/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "The company no longer operates independently and publishes no public API surface — utopialabs.com returns 404 and its former docs, api, and app subdomains no longer resolve."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
